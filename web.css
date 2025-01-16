@@ -1,0 +1,435 @@
+/* agatha sun yali */
+.web-header{
+    justify-content: center;
+    text-align: center;
+}
+
+.web-header img{
+    width: 7%;
+}
+
+/*features*/ /* #region */
+.features ul {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.features li {
+    color: #000;
+    background-color: #cecece;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    width: 200px; 
+    border-radius: 5px; 
+}
+
+.features li::marker {
+    color: #cecece;
+    font-size: 40px;
+}
+
+.features_text {
+    position: relative;
+    bottom: 10px;
+}
+
+
+.nav {
+    background-color: black;
+    padding: 13px 10px;
+    text-align: center;
+}
+
+.nav a {
+    padding: 5px 25px;
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    color: gray;
+}
+
+
+.main {
+    margin: 10px auto;
+    max-width: 1200px; 
+    padding: 10px;
+}
+
+.photoGallery {
+    margin: 5px;
+    background-color: gray;
+    overflow: hidden;
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.img_left, .img_right {
+    margin: 5px;
+    width: 24%;
+    flex: 1 1 24%; 
+}
+
+
+.info {
+    width: 100%;
+    margin: 15px auto;
+    text-align: center;
+    max-width: 1200px; 
+}
+
+/* table setting */
+table, td, th {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: auto;
+}
+
+th {
+    height: 30px;
+    background-color: #f2f2f2; 
+    font-weight: bold;
+}
+
+.info p:nth-child(3) {
+    padding: 10px;
+    margin-right: 3%;
+    font-weight: bolder;
+    color: rgb(12, 172, 235);
+    text-shadow: 0 0 10px rgb(224, 98, 169);
+    font-size: xx-large;
+}
+
+.info p:nth-child(4){
+    padding: 10px;
+    margin-right: 3%;
+    font-weight: bold;
+    border: #000 3px solid;
+    font-size: xx-large;
+}
+/* #endregion */
+/* #endregion */
+
+/*Support*/ /* #region */
+/*support_info*/ /* #region */
+.support_info{
+    text-align: center;
+    border-top: 2px black solid;
+    border-bottom: 2px black solid;
+    margin: 10px 0;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.support_info h1{
+    margin-top: 0;
+}
+
+.support_info h2{
+    text-decoration-line:underline;
+}
+
+
+.img_left img,
+.img_right img{
+    width: 100%;
+    display: flex;
+    vertical-align: top;
+    margin: 3px;
+}
+
+.img_left+*{
+    width: 50%;
+    position: relative;
+    right: -0.7%;
+    margin-top: 10px;
+}
+/* #endregion */
+
+.info_left, .info_right {
+    width: 48%;
+    margin: 10px auto;
+    display: block;
+    float: none;
+}
+/* #endregion */
+
+/*search*/ /* #region */
+.search{
+    text-align: center;
+    font-size: x-large;
+}
+
+.search img{
+    width: 100%;
+}
+
+.search_highlight{
+    font-weight: bolder;
+    color: skyblue;
+    font-size: xx-large;
+    display: block;
+}
+
+.search input{
+    width: 30%;
+    margin: 30px 0;
+}
+/* #endregion */
+/* #endregion */
+
+/*Products*/ /* #region */
+/*Overview*/ /* #region */
+.overview img{
+    width: 100%;
+}
+
+.overview_text{
+    display: flex;
+    text-align: center;
+}
+
+.overview_text p{
+    padding-left: 80px;
+    position: relative;
+    margin: 0;
+}
+
+.Phone{
+    right: -7%;
+}
+
+.Tablet{
+    right: -12.5%;
+}
+
+.Smartwatches{
+    right: -16%;
+}
+
+.Headphones{
+    right: -17.5%;
+}
+
+.Locator{
+    right: -20%;
+}
+
+.Audio{
+    right: -24%;
+}
+
+
+.detail{
+    line-height: 2.5;
+    padding-left: 30%;
+    margin: 10px 0;
+    border-top: #000 3px solid;
+    border-bottom: #000 3px solid;
+}
+/* #endregion */
+
+/*Laptop*/ /* #region */
+.laptop {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* child elements can wrap with flex display*/
+}
+
+.laptop h2{
+    flex-basis: 100%;
+}
+
+.laptopType{
+    margin: 20px 6%;
+    position: relative;
+}
+
+.laptopType img{
+    width: 20vw;
+    height: 30vh;
+    position: relative;/* make text in the img */
+
+    /*animation setting*/
+    transition: all 0.2s linear;
+}
+
+.laptopInfo {
+    position: absolute; /* make the text in img */
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+
+    /*animation setting*/
+    opacity: 0;
+    background-color: rgba(40, 40, 40, 0.7); 
+    transition: all 0.4s ease-in-out;
+}
+
+.laptopType h3 {
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+.laptopType p { 
+    transform: translateY(100px);
+    opacity: 0;
+	transition: all 0.2s linear;
+}
+
+/*while hover*/
+.laptopType:hover img{ 
+	transform: scale(0.7);
+} 
+.laptopType:hover .laptopInfo{ 
+	opacity: 1;
+}
+.laptopType:hover p,
+.laptopType:hover h3{
+    opacity: 1;
+    color: white;
+    transform: translateY(0px);
+    transition-delay: 0.1s;
+}
+/* #endregion */
+/* #endregion */
+
+/*About Us*/ /* #region */
+.aboutUs{
+    text-align: center;
+    margin: 0 20px;
+}
+
+.intro{
+    background-color: #dbedf2;
+    padding: 40px;
+    font-size: x-large;
+    margin: 20px 30px;
+}
+
+.aboutUs h2{
+    text-decoration-line:underline;
+}
+
+.history p{
+    text-align: left;
+    margin: 20px 50px 30px 30px;
+
+}
+
+.members p{
+    margin-top: 15px;
+}
+/* #endregion */
+
+/*Blog*/ /* #region */
+.blog{
+    background-color: #cecece;
+    text-align: center;
+    padding: 20px 40px;
+    margin: 30px;
+}
+/* #endregion */
+
+/*contact info*/ /* #region */
+.contactInfo{
+    background-color: #e7efc1;
+    clear: both;
+    color: #aeb4bf;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact_title{
+    font-weight: bold;
+    width: 20%;
+    position: relative;
+    right: -10%;
+}
+
+/* set contact detail */
+.contact_title +*{
+    position: relative;
+    right: -20%;
+    font-size: medium;
+    width: 30%;
+    line-height: 32px;
+}
+
+.terms{
+    font-size: small;
+    position: relative;
+    right: -30%;
+    bottom: 0;
+}
+
+.terms img{
+    width: 60%;
+    right: -7%;
+    position: relative;
+}
+
+.terms p{
+    margin: 0;
+    line-height: 24px;
+}
+/* #endregion */
+
+/*footer*/ /* #region */
+footer{
+    background-color: gray;
+    text-align: center;
+    padding: 10px;
+    font-size: medium;
+}
+/* #endregion */
+
+/*global setting*/ /* #region */
+body{
+    margin: 0;
+}
+
+@media screen and (min-width: 450px){
+    body{
+        font-size: small;
+    }
+}
+
+@media screen and (min-width: 600px){
+    body{
+        font-size: medium;
+    }
+}
+
+@media screen and (min-width: 750px){
+    body{
+        font-size: large;
+    }
+}
+
+@media screen and (min-width: 900px){
+    body{
+        font-size: larger;
+    }
+}
+/* #endregion */
