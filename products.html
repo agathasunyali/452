@@ -12,12 +12,16 @@
     <div class="web-header">
         <img src="Logo.png" alt="Logo">
         <div class="nav">
-            <a href="index.html">Home</a>
-            <a href="products.html">Products</a>
-            <a href="support.html">Support</a>
-            <a href="aboutUs.html">About Us</a>
-            <a href="blog.html">Blog</a>
+            <a href="index.html" tabindex="1">Home</a>
+            <a href="products.html" tabindex="2">Products</a>
+            <a href="support.html" tabindex="3">Support</a>
+            <a href="aboutUs.html" tabindex="4">About Us</a>
+            <a href="blog.html" tabindex="5">Blog</a>
         </div>
+    </div>
+    <div class="font-size-adjust">
+        <button onclick="increaseFontSize()">Enlarge font</button>
+        <button onclick="decreaseFontSize()">Reduce font</button>
     </div>
     <div class="main">
         <div class="overview">
@@ -91,6 +95,18 @@
         &copy; 2024 Agatha sun yali, 223190628 Inc. a yucai company. All Rights Reserved.
     </footer>
 </body>
+<script>
+    function increaseFontSize() {
+        var currentSize = parseFloat(document.body.style.fontSize || '16px');
+        document.body.style.fontSize = (currentSize + 2) + 'px';
+    }
 
+    function decreaseFontSize() {
+        var currentSize = parseFloat(document.body.style.fontSize || '16px');
+        if (currentSize > 12) { 
+            document.body.style.fontSize = (currentSize - 2) + 'px';
+        }
+    }
+</script>
 
 </html>
